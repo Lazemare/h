@@ -16,10 +16,13 @@
 int main(int argc, char *argv[])
 {
 	int step = 0;
+	int output_freq = 1;
 	struct MDSYSTEM mdsystem;
 
-	if (argc == 1 )
+	if (argc == 1)
 		print_help(argc, argv);
+	if (argc >= 3)
+		output_freq = atoi(argv[2]);
 
 	print_task_info(0);
 
@@ -36,7 +39,7 @@ int main(int argc, char *argv[])
 
 	for (step = 0; step < atoi(argv[1]); step++) {
 		vv2(&mdsystem);
-		if (step%((argc > 2) ? atoi(argv[2]) : 1) == 0)
+		if (step%output_freq == 0)
 			print_data(mdsystem, (step + 1));
 	}
 
