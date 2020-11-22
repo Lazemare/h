@@ -151,6 +151,7 @@ inline void thermostat_lan(struct MDSYSTEM *mdsystem, \
 	static int count = 0;
 	static double c1 = 0.0;
 	static double c2 = 0.0;
+
 	if (count == 0) {
 		c1 = exp(-1.0 * 0.5 / tau);
 		c2 = sqrt((1 - c1 * c1) * temp_target * k_B);
