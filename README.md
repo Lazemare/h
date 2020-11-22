@@ -60,7 +60,7 @@ gnuplot> p "log_h" u 2:3 title "Harmonic", "log_d" u 2:3 title "Double Wall"
 - To change parameters of the potential function and the initial conditions, modify values in the `main` function.
 - To use the Langevin thermostat[<sup>1</sup>](#ref-1), uncomment the commented `thermostat_lan` sentences in the `vv2` function.
 
-# References
+## References
 
 <div id="ref-1"></div>
 
