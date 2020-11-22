@@ -17,7 +17,6 @@ struct MDSYSTEM {
 double gasdev(void);
 void print_task_info(int pos);
 void vv2(struct MDSYSTEM *mdsystem);
-void cs4(struct MDSYSTEM *mdsystem);
 void print_help(int argc, char *argv[]);
 void update_a(struct MDSYSTEM *mdsystem);
 void update_v(struct MDSYSTEM *mdsystem);
