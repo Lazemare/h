@@ -1,4 +1,4 @@
-# h: Classical harmonic model propagated by velocity Verlet.
+# h: Classical harmonic model propagated by velocity Verlet
 
 ## What?
 
@@ -26,7 +26,7 @@ I'm boring so I wrote this piece of shit.
 ## Compile
 
 ```shell
-$ ./make.sh
+$ chmod +x make.sh && ./make.sh
 ```
 
 This will generate two executables, `h` and `d` under your directory, which uses the harmonic potential and the double wall potential, correspondingly.
